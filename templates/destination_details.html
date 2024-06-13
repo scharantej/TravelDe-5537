@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Germany Travel Planner - Destination Details</title>
+</head>
+<body>
+<h1>Germany Travel Planner - Destination Details</h1>
+<p>Destination: {{ destination.name }}</p>
+<ul>
+<li>Attractions:</li>
+{% for attraction in destination.attractions %}
+<li>{{ attraction }}</li>
+{% endfor %}
+</ul>
+<ul>
+<li>Accommodation:</li>
+{% for accommodation in destination.accommodation %}
+<li>{{ accommodation }}</li>
+{% endfor %}
+</ul>
+<ul>
+<li>Transportation:</li>
+{% for transportation in destination.transportation %}
+<li>{{ transportation }}</li>
+{% endfor %}
+</ul>
+</body>
+</html>
+
