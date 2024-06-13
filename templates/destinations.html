@@ -1,0 +1,20 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Germany Travel Planner - Destinations</title>
+</head>
+<body>
+<h1>Germany Travel Planner - Destinations</h1>
+<p>Start Date: {{ start_date }}</p>
+<p>End Date: {{ end_date }}</p>
+<ul>
+{% for destination in destinations %}
+<li>{{ destination.name }}</li>
+<a href="/destination_details/{{ start_date }}/{{ end_date }}/{{ destination.name }}">More Details</a>
+{% endfor %}
+</ul>
+</body>
+</html>
+
+
